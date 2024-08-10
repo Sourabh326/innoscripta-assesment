@@ -1,0 +1,35 @@
+.filters-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-input {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.reset-button {
+  background-color: #ff6f6f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-left: auto;
+}
+
+.reset-button:hover {
+  background-color: #ff3b3b;
+}

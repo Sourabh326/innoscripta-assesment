@@ -1,0 +1,118 @@
+.article-item {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+  }
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .article-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .article-item h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+  
+  .article-item .source {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .article-item .description {
+    font-size: 1em;
+  }
+  
+  .article-item a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .article-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .article-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-item h2 {
+    font-size: 1.8em;
+    margin: 10px 0 !important;
+  }
+  
+  .article-item h2 a {
+    text-decoration: none;
+    color: #474c50;
+  }
+  
+  .article-item a{
+    text-decoration: none !important;
+  }
+  
+  .article-item h2 a:hover {
+    text-decoration: underline;
+  }
+  
+  .article-item .source,
+  .article-item .author,
+  .article-item .date {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .article-item .description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .read-more-button {
+    display: inline-block;
+    background-color: #ff6f6f;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .read-more-button:hover {
+    background-color: #f06565;
+    color: white;
+    text-decoration: none;
+  }
+
+  .article-footer .subsection {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  

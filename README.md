@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Docker Setup
+
+You can also build and run this React app using Docker. Follow the steps below to containerize your application.
+
+### Prerequisites
+
+- Ensure you have Docker installed on your system. You can download and install Docker from [here](https://docs.docker.com/get-docker/).
+
+### Dockerfile Overview
+
+## Build the Docker Image
+docker build -t innoscripta-assesment .
+
+## Docker run -p 3000:3000 innoscripta-assesment
+docker run -p 3001:3000 innoscripta-assessment
+
+## Stop the Running Container
+docker stop <container_id_or_name>
+
+## Remove a Stopped Container
+docker rm <container_id_or_name>
+
+```dockerfile
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+RUN npm run build
+
+CMD ["npx", "start"]
